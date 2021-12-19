@@ -1,0 +1,44 @@
+{
+    "compilerOptions": {
+        // Dirst etc
+        "outDir": "public/js/no-react", // * Change this later
+        "module": "esnext",
+        "target": "es2017",
+        "lib": ["es6", "dom", "esnext.asynciterable", "es2017", "esnext"],
+        "sourceMap": false,
+        "declaration": true, // Adds {name}.d.ts to the build
+
+        // Settings that change often
+        "isolatedModules": false, // !Set this to true
+
+        // Standard settings
+        "experimentalDecorators": true,
+        "allowJs": true,
+        "moduleResolution": "Node",
+        // // "rootDir": "src",
+        // // "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true,
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true,
+        //"removeComments": true, // was true
+        "removeComments": false,
+        "esModuleInterop": true,
+        "strict": true,
+        "noFallthroughCasesInSwitch": true,
+        "resolveJsonModule": true,
+        // "noEmit": true, // if true: Will not compile code and only type check
+        "typeRoots": ["./node_modules/@types", "./src/**", "./src/@types/**"]
+    },
+    "include": ["src/**/*", "src/@types/**/*"],
+    "exclude": [
+        "node_modules",
+        "public"
+        //"scripts",
+        //"webpack"
+    ]
+}

@@ -1,0 +1,1 @@
+type HTMLElementTagNames = keyof HTMLElementTagNameMap
