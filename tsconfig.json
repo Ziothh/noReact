@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         // Dirst etc
-        "outDir": "public/js/no-react", // * Change this later
+        "outDir": "./lib", // * Change this later
         "module": "esnext",
         "target": "es2017",
         "lib": ["es6", "dom", "esnext.asynciterable", "es2017", "esnext"],
@@ -32,12 +32,12 @@
         "noFallthroughCasesInSwitch": true,
         "resolveJsonModule": true,
         // "noEmit": true, // if true: Will not compile code and only type check
-        "typeRoots": ["./node_modules/@types", "./src/**", "./src/@types/**"]
+        "typeRoots": ["./node_modules/", "./src/@types/"]
     },
-    "include": ["src/**/*", "src/@types/**/*"],
+    "include": ["./src/**/*", "./src/@types/**/*"],
     "exclude": [
-        "node_modules",
-        "public"
+        "./node_modules",
+        "./lib"
         //"scripts",
         //"webpack"
     ]
