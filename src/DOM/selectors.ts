@@ -1,2 +1,6 @@
-export const $ = (query:HTMLElementTagNames) => document.querySelector(query)
-export const $$ = (query:HTMLElementTagNames) => document.querySelectorAll(query)
+import { HTMLElementTagName } from "../types"
+
+/** Equivalent to `document.querySelector` */
+export const $ = (query: HTMLElementTagName) => document.querySelector(query)
+/** Equivalent to `document.querySelectorAll` */
+export const $$ = (query: HTMLElementTagName) => document.querySelectorAll(query)
